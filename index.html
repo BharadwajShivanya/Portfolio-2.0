@@ -115,6 +115,9 @@
     background:var(--bg-soft);border:3px solid var(--bg);
     z-index:2;
   }
+  .photo-inner img{
+    width:100%;height:100%;object-fit:cover;display:none;
+  }
   .photo-monogram{
     display:flex;align-items:center;justify-content:center;
     background:radial-gradient(circle at 30% 25%, var(--surface-hi), var(--bg-soft));
@@ -333,6 +336,7 @@
       <div class="photo-col reveal in">
         <div class="photo-ring">
           <div class="photo-inner photo-monogram" aria-label="Shivanya Bharadwaj">
+            <img src="profile.png" alt="Shivanya Bharadwaj" onload="this.style.display='block'; if(this.nextElementSibling) this.nextElementSibling.style.display='none';">
             <span>SB</span>
           </div>
           <div class="photo-scan"></div>
